@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Ad Targeting</h1>
+    <RulesForm />
+    <RulesList />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import RulesForm from './components/RulesForm.vue'
+import RulesList from "./components/RulesList";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    RulesForm,
+    RulesList
   }
 }
 </script>
